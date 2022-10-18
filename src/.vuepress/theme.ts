@@ -82,11 +82,11 @@ export default hopeTheme({
       autoExcerpt: false,
     },
 
-    /*comment: {
+    comment: {
       provider: "Waline",
       serverURL: "https://waline.qill.me/",
       reaction: true,
-    },*/
+    },
     feed: {
       atom: true,
       json: true,
