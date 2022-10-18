@@ -18,6 +18,8 @@ export default hopeTheme({
 
   repoDisplay: false,
 
+  docsDir: "src",
+
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
