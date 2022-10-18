@@ -1,0 +1,5 @@
+.idea/
+.cache/
+.temp/
+dist/
+node_modules/
