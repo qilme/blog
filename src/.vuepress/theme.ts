@@ -85,7 +85,7 @@ export default hopeTheme({
     comment: {
       provider: "Waline",
       serverURL: "https://waline.qill.me/",
-      reaction: true,
+      reaction: false,
     },
     feed: {
       atom: true,
