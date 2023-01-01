@@ -1,16 +1,18 @@
-import { defineUserConfig } from "vuepress";
-import { searchPlugin } from "@vuepress/plugin-search";
+import { defineUserConfig } from "@vuepress/cli";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
 
+const base = <"/" | `/${string}/`>process.env.BASE || "/";
+
 export default defineUserConfig({
-  base: "/",
+  base,
   lang: "zh-CN",
   title: "qilme",
   description: "qilme 的博客",
   theme,
   plugins: [
-    searchPlugin({
-
-    }),
+    searchProPlugin({
+      indexContent: true,
+    })
   ],
 });

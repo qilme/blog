@@ -4,7 +4,7 @@ heroText: 啾咪
 heroFullScreen: false
 home: true
 icon: home
-layout: Blog
+layout: BlogHome
 tagline: ( ^.< )
 title: 博客主页
 ---

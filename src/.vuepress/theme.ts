@@ -2,8 +2,11 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from "./navbar";
 import { enSidebar, zhSidebar } from "./sidebar";
 
+const hostname =
+  process.env.HOSTNAME || "https://qill.me/";
+
 export default hopeTheme({
-  hostname: "https://qill.me",
+  hostname,
 
   author: {
     name: "qilme",
@@ -21,6 +24,8 @@ export default hopeTheme({
   docsDir: "src",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
+
+  hotReload: true,
 
   blog: {
     medias: {
@@ -45,12 +50,11 @@ export default hopeTheme({
         intro: "/about/",
       },
 
-      // page meta
       metaLocales: {
         editLink: "GitHub",
       },
     },
-    "/en": {
+    "/en/": {
       // navbar
       navbar: enNavbar,
 
@@ -97,12 +101,13 @@ export default hopeTheme({
       container: true,
       demo: true,
       echarts: true,
+      figure: true,
       flowchart: true,
       gfm: true,
+      imgLazyload: true,
       imgSize: true,
       include: true,
       katex: true,
-      imgLazyload: true,
       mark: true,
       mermaid: true,
       playground: {
@@ -111,6 +116,19 @@ export default hopeTheme({
       presentation: {
         plugins: ["highlight", "math", "search", "notes", "zoom"],
       },
+      stylize: [
+        {
+          matcher: "Recommended",
+          replacer: ({ tag }) => {
+            if (tag === "em")
+              return {
+                tag: "Badge",
+                attrs: { type: "tip" },
+                content: "Recommended",
+              };
+          },
+        },
+      ],
       sub: true,
       sup: true,
       tabs: true,
