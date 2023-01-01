@@ -78,10 +78,7 @@ export default hopeTheme({
   },
 
   plugins: {
-    blog: {
-      autoExcerpt: false,
-    },
-
+    blog: true,
     comment: {
       provider: "Waline",
       serverURL: "https://waline.qill.me/",
@@ -102,10 +99,10 @@ export default hopeTheme({
       echarts: true,
       flowchart: true,
       gfm: true,
-      imageSize: true,
+      imgSize: true,
       include: true,
       katex: true,
-      lazyLoad: true,
+      imgLazyload: true,
       mark: true,
       mermaid: true,
       playground: {
@@ -117,7 +114,7 @@ export default hopeTheme({
       sub: true,
       sup: true,
       tabs: true,
-      vpre: true,
+      vPre: true,
       vuePlayground: true,
     },
   },
