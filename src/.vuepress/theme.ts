@@ -2,11 +2,10 @@ import { hopeTheme } from "vuepress-theme-hope";
 import { enNavbar, zhNavbar } from "./navbar";
 import { enSidebar, zhSidebar } from "./sidebar";
 
-const hostname =
-  process.env.HOSTNAME || "https://qill.me/";
-
 export default hopeTheme({
-  hostname,
+  backToTop: undefined,
+  footer: "",
+  hostname: "https://qill.me/",
 
   author: {
     name: "qilme",
@@ -22,10 +21,6 @@ export default hopeTheme({
   repoDisplay: false,
 
   docsDir: "src",
-
-  pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
-
-  hotReload: true,
 
   blog: {
     medias: {
@@ -86,7 +81,11 @@ export default hopeTheme({
     comment: {
       provider: "Waline",
       serverURL: "https://waline.qill.me/",
-      reaction: false,
+      reaction: [],
+      recaptchaV3Key: "6LchYmUlAAAAAJbTfdG2Ur5cKTgXA4pK4q5jPhMj",
+      locale: {
+        placeholder: '欢迎留言',
+      },
     },
     feed: {
       atom: true,
@@ -107,7 +106,6 @@ export default hopeTheme({
       imgLazyload: true,
       imgSize: true,
       include: true,
-      katex: true,
       mark: true,
       mermaid: true,
       playground: {
@@ -135,5 +133,5 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
-  },
+  }
 });
