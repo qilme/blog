@@ -78,7 +78,7 @@ export default hopeTheme({
 
   plugins: {
     blog: true,
-    /*comment: {
+    comment: {
       provider: "Waline",
       serverURL: "https://waline.qill.me/",
       reaction: [],
@@ -86,7 +86,7 @@ export default hopeTheme({
       locale: {
         placeholder: '欢迎留言',
       },
-    },*/
+    },
     feed: {
       atom: true,
       json: true,
