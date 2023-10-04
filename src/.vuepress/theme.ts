@@ -78,7 +78,7 @@ export default hopeTheme({
 
   plugins: {
     blog: true,
-    comment: {
+    /*comment: {
       provider: "Waline",
       serverURL: "https://waline.qill.me/",
       reaction: [],
@@ -86,12 +86,13 @@ export default hopeTheme({
       locale: {
         placeholder: '欢迎留言',
       },
-    },
+    },*/
     feed: {
       atom: true,
       json: true,
       rss: true,
     },
+/*
     mdEnhance: {
       align: true,
       attrs: true,
@@ -111,9 +112,7 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommended",
@@ -133,5 +132,6 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
+*/
   }
 });

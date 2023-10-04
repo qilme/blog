@@ -1,5 +1,5 @@
 ---
-bgImage: /bg.webp
+#bgImage: /bg.webp
 heroText: 啾咪
 heroFullScreen: false
 home: true
