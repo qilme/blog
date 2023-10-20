@@ -1,6 +1,9 @@
 ---
 icon: info
 ---
+# CC-BY-NC-SA 4.0
+
+```markdown
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
 
 Creative Commons Corporation ("Creative Commons") is not a law firm and
@@ -354,3 +357,4 @@ licensed material. For the avoidance of doubt, this paragraph does not
 form part of the public licenses.
 
 Creative Commons may be contacted at creativecommons.org.
+```
