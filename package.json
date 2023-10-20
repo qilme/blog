@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "blog:http-server": "http-server src/.vuepress/dist",
-    "blog:build": "vuepress build src && npm run blog:http-server",
+    "blog:build": "vuepress build src",
+    "blog:preview": "pnpm run blog:build && pnpm run blog:http-server",
     "blog:clean-dev": "vuepress dev src --clean-cache",
     "blog:dev": "vuepress dev src",
     "blog:update-package": "pnpm dlx vp-update"
