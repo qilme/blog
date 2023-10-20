@@ -6,16 +6,17 @@
   "type": "module",
   "scripts": {
     "blog:http-server": "http-server src/.vuepress/dist",
-    "blog:build": "vuepress build src",
+    "blog:build": "vuepress build src && npm run blog:http-server",
     "blog:clean-dev": "vuepress dev src --clean-cache",
     "blog:dev": "vuepress dev src",
     "blog:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.67",
+    "nodejs-jieba": "^0.0.2",
     "vue": "^3.3.4",
     "vuepress": "2.0.0-beta.67",
-    "vuepress-plugin-search-pro": "2.0.0-beta.237",
-    "vuepress-theme-hope": "2.0.0-beta.237"
+    "vuepress-plugin-search-pro": "2.0.0-beta.238",
+    "vuepress-theme-hope": "2.0.0-beta.238"
   }
 }

@@ -1,5 +1,6 @@
 import {defineUserConfig} from "vuepress";
 import {searchProPlugin} from "vuepress-plugin-search-pro";
+import {cut} from "nodejs-jieba";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -12,6 +13,10 @@ export default defineUserConfig({
     plugins: [
         searchProPlugin({
             indexContent: true,
+            indexOptions: {
+                tokenize: (text, fieldName) =>
+                    fieldName === "id" ? [text] : cut(text, true),
+            }
         })
     ]
 });

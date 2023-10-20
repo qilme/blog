@@ -3,8 +3,6 @@ import {enNavbar, zhNavbar} from "./navbar";
 import {enSidebar, zhSidebar} from "./sidebar";
 
 export default hopeTheme({
-    backToTop: undefined,
-    footer: "",
     hostname: "https://qill.me/",
 
     author: {
@@ -14,7 +12,7 @@ export default hopeTheme({
 
     iconAssets: "iconfont",
 
-    logo: "/logo.webp",
+    logo: "/assets/logo.webp",
 
     repo: "qilme/blog",
 
@@ -32,8 +30,10 @@ export default hopeTheme({
 
             displayFooter: true,
 
+            copyright: "CC BY-NC-SA 4.0 <a href=\"/rss.xml\" target=\"_blank\"><span class=\"font-icon icon iconfont icon-rss\" style=\"color: orange\"></span></a> <a href=\"/atom.xml\" target=\"_blank\"><span class=\"font-icon icon iconfont icon-react\" style=\"color: orange;\"></span></a> <a href=\"/feed.json\" target=\"_blank\"><span class=\"font-icon icon iconfont icon-json\" style=\"color: orange;\"></span></a>",
+
             blog: {
-                avatar: "/logo.webp",
+                avatar: "/assets/logo.webp",
                 roundAvatar: true,
                 name: "qilme",
                 description: "!",
@@ -77,6 +77,26 @@ export default hopeTheme({
             },
         },
         pwa: {
+            manifest: {
+                icons: [
+                    {
+                        src: "/assets/logo.webp",
+                        sizes: "750x750",
+                        type: "image/webp",
+                    },
+                    {
+                        src: "/assets/logo@512x.webp",
+                        sizes: "512x512",
+                        type: "image/webp",
+                    },
+                    {
+                        src: "/assets/logo@192x.webp",
+                        sizes: "192x192",
+                        type: "image/webp",
+                    }
+                ],
+            },
+            themeColor: "#000000",
             cachePic: true,
             update: "disable"
         },
@@ -85,46 +105,10 @@ export default hopeTheme({
             json: true,
             rss: true,
         },
-        /*
-            mdEnhance: {
-              align: true,
-              attrs: true,
-              chart: true,
-              codetabs: true,
-              container: true,
-              demo: true,
-              echarts: true,
-              figure: true,
-              flowchart: true,
-              gfm: true,
-              imgLazyload: true,
-              imgSize: true,
-              include: true,
-              mark: true,
-              mermaid: true,
-              playground: {
-                presets: ["ts", "vue"],
-              },
-              presentation: ["highlight", "math", "search", "notes", "zoom"],
-              stylize: [
-                {
-                  matcher: "Recommended",
-                  replacer: ({ tag }) => {
-                    if (tag === "em")
-                      return {
-                        tag: "Badge",
-                        attrs: { type: "tip" },
-                        content: "Recommended",
-                      };
-                  },
-                },
-              ],
-              sub: true,
-              sup: true,
-              tabs: true,
-              vPre: true,
-              vuePlayground: true,
-            },
-        */
+        mdEnhance: {
+            checkLinks: {
+                status: "always"
+            }
+        }
     }
 });
