@@ -26,11 +26,11 @@ export default hopeTheme({
 
             sidebar: zhSidebar,
 
-            footer: "<a href=\"https://icp.gov.moe/?keyword=20222365\" target=\"_blank\">萌 ICP 备 20222365 号</a>",
+            footer: "<a href='https://icp.gov.moe/?keyword=20222365' target='_blank'>萌 ICP 备 20222365 号</a>",
 
             displayFooter: true,
 
-            copyright: "CC BY-NC-SA 4.0 <a href=\"/rss.xml\" target=\"_blank\"><span class=\"font-icon icon iconfont icon-rss\" style=\"color: orange\"></span></a> <a href=\"/atom.xml\" target=\"_blank\"><span class=\"font-icon icon iconfont icon-react\" style=\"color: orange;\"></span></a> <a href=\"/feed.json\" target=\"_blank\"><span class=\"font-icon icon iconfont icon-json\" style=\"color: orange;\"></span></a>",
+            copyright: "<a href='/CC-BY-NC-SA-4.0/'>BY-NC-SA 4.0</a> <a href='/rss.xml' target='_blank'><span class='font-icon icon iconfont icon-rss' style='color: orange'></span></a> <a href='/atom.xml' target='_blank'><span class='font-icon icon iconfont icon-react' style='color: orange;'></span></a> <a href='/feed.json' target='_blank'><span class='font-icon icon iconfont icon-json' style='color: orange;'></span></a>",
 
             blog: {
                 avatar: "/assets/logo.webp",
@@ -51,7 +51,7 @@ export default hopeTheme({
             // sidebar
             sidebar: enSidebar,
 
-            footer: "<a href=\"https://icp.gov.moe/?keyword=20222365\" target=\"_blank\">萌 ICP 备 20222365 号</a>",
+            footer: "<a href='https://icp.gov.moe/?keyword=20222365' target='_blank'>萌 ICP 备 20222365 号</a>",
 
             displayFooter: true,
 
@@ -72,6 +72,7 @@ export default hopeTheme({
             provider: "Waline",
             serverURL: "https://waline.qill.me/",
             recaptchaV3Key: "6LchYmUlAAAAAJbTfdG2Ur5cKTgXA4pK4q5jPhMj",
+            // turnstileKey: "0x4AAAAAAAL8AQMcX6K0Wh32",
             locale: {
                 placeholder: "",
             },
